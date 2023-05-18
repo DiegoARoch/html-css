@@ -11,8 +11,8 @@
 <body>
     <header>
         <h1>Meu Site</h1>
-        <i id="burguer" class="material-icons" onclick="clickMenu()" ondblclick="fechar()">menu</i>
-        <nav id="naviten">
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="iten">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -20,7 +20,7 @@
                 <li><a href="#">Opção 4</a></li>
                 <li><a href="#">Opção 5</a></li>
             </ul>
-        </nav>
+        </menu>
     </header>
     <main>
         <article>
@@ -35,14 +35,13 @@
     </main>
     <script>
         function clickMenu() {
-            naviten.style.display = 'block'
-        }
-
-        function fechar() {
-            if (naviten.style.display == 'block'){
-                naviten.style.display = 'none'
+            if (iten.style.display == 'block'){
+                iten.style.display = 'none'
+            } else {
+                iten.style.display = 'block'
             }
         }
+
     </script>
 </body>
 </html>

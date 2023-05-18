@@ -33,16 +33,16 @@ i#burguer:hover {
     color: black;
 }
 
-nav {
- display: contents;
-}
+/*menu {
+ display: none;
+}*/
 
-nav > ul {
+menu > ul {
     list-style-type: none;
     text-align: center;
 }
 
-nav > ul > li > a {
+menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -51,7 +51,7 @@ nav > ul > li > a {
     border-top: 2px solid gray;
 }
 
-nav > ul > li > a:hover {
+menu > ul > li > a:hover {
     background-color: gray;
 }
 
