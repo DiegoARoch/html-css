@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query - Menus Responsivos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <i id="burguer" class="material-icons" onclick="clickMenu()" ondblclick="fechar()">menu</i>
+        <nav id="naviten">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -31,5 +33,16 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem nemo repellat ipsum eveniet sequi, perferendis ipsam debitis in expedita. Est quo modi repudiandae, iure sunt perspiciatis. Possimus, ducimus reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eveniet quas qui maxime accusamus cum sapiente eaque magni molestiae, ratione pariatur officiis nemo repellendus placeat iure cumque minima tempora laudantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quo voluptatem, unde quos, optio distinctio quia repudiandae laborum tempora earum animi quasi dolores labore natus? Dolorem exercitationem veniam quasi. Nostrum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt maiores quia cum, dicta aspernatur omnis delectus, odit voluptates a eum qui deserunt similique? Eum ipsum aperiam libero odio voluptate.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            naviten.style.display = 'block'
+        }
+
+        function fechar() {
+            if (naviten.style.display == 'block'){
+                naviten.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
